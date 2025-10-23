@@ -61,7 +61,7 @@ return (
 <ThemeWrapper>
 <div className="min-h-screen bg-white text-black dark:bg-gray-950 dark:text-white">
 <LanguageProvider>
-<Router>
+<Router basename={import.meta.env.VITE_BASE_PATH || ""}>
 <Header />
 <Navigation />
 <Suspense
